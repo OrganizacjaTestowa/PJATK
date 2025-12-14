@@ -1,0 +1,6 @@
+AZURE_OPENAI_API_KEY="your-azure-openai-api-key"
+OPENAI_API_VERSION="2024-06-01-preview"
+AZURE_OPENAI_ENDPOINT="https://X.openai.azure.com/"
+AZURE_OPENAI_COMPLETION_MODEL="gpt-4.1"
+AI_SERVICES_ENDPOINT="https://X.cognitiveservices.azure.com/"
+GPT4O_MODEL_DEPLOYMENT_NAME="gpt-4.1"
