@@ -27,6 +27,8 @@ except ImportError:  # pragma: no cover
 
     class PDFInfoNotInstalledError(Exception):
         pass
+
+
 from azure.ai.documentintelligence import DocumentIntelligenceClient
 from azure.ai.documentintelligence.models import AnalyzeResult, DocumentContentFormat
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider
@@ -310,7 +312,7 @@ class DocumentProcessor:
             oai_processing_ms = 0
 
             # Create a dynamic system prompt based on the model type
-            system_text_prompt = f"""You are an AI assistant that extracts data from documents. Extract the data from this {model_name.replace('Insurance', ' Insurance').replace('Policy', ' Policy').lower()}. 
+            system_text_prompt = f"""You are an AI assistant that extracts data from documents. Extract the data from this {model_name.replace("Insurance", " Insurance").replace("Policy", " Policy").lower()}. 
 - If a value is missing, enter null.  
 - Do not make assumptions or modify any data.  
 - Format all data exactly as in the original document.  
